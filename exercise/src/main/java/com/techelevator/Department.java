@@ -1,5 +1,8 @@
 package com.techelevator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Department {
 
     private int departmentId;
@@ -25,5 +28,5 @@ public class Department {
         this.departmentId = departmentId;
         this.name = name;
     }
-
+    List<Department>departmentList = new ArrayList<>();
 }
