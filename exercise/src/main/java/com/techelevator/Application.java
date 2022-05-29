@@ -32,6 +32,14 @@ public class Application {
 
         // create employees
         createEmployees();
+        List<Employee> employeeList = new ArrayList<>();
+
+        Employee employeeDean = new Employee();
+
+
+
+
+
 
         // give Angie a 10% raise, she is doing a great job!
 

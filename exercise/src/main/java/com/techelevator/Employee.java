@@ -11,6 +11,8 @@ public class Employee {
 
     public static final Double STARTING_SALARY = 60000.00;
 
+    public Employee (){}
+
     public Employee (String employeeInfo){
 
         this.employeeId = employeeId;
@@ -55,6 +57,7 @@ public class Employee {
     }
 
     public void setLastName(String lastName) {
+
         this.lastName = lastName;
     }
 
