@@ -1,7 +1,9 @@
 package com.techelevator;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Application {
 
@@ -59,11 +61,40 @@ public class Application {
 
         // create the TEams project
         createTeamsProject();
+        Map<String, Project> projects = new HashMap<>();
+
+        Project TEams = new Project();
+
+        TEams.setName("TEams");
+        TEams.setDescription("Project Management Software");
+        TEams.setStartDate("10/10/2020");
+        TEams.setDueDate("11/10/2020");
+        TEams.setTeamMembers("Dean Johnson");
+        TEams.setTeamMembers("Angie Smith");
+
+
+
+
+
         // create the Marketing Landing Page Project
         createLandingPageProject();
 
+        Project marketingLandingPage = new Project();
+        marketingLandingPage.setName("Marketing Landing Page");
+        marketingLandingPage.setDescription("Lead Capture Landing Page for Marketing");
+        marketingLandingPage.setStartDate("10/10/2020");
+        marketingLandingPage.setDueDate("10/17/2020");
+        marketingLandingPage.setTeamMembers("Margaret Thompson");
+
+
+
+
         // print each project name and the total number of employees on the project
         printProjectsReport();
+
+
+
+
     }
 
     /**
@@ -99,8 +130,7 @@ public class Application {
      * Create the 'TEams' project.
      */
     private void createTeamsProject() {
-
-    }
+            }
 
     /**
      * Create the 'Marketing Landing Page' project.
