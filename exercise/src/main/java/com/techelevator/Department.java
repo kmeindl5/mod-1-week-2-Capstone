@@ -28,5 +28,5 @@ public class Department {
         this.departmentId = departmentId;
         this.name = name;
     }
-    List<Department>departmentList = new ArrayList<>();
+    List<String>departmentList = new ArrayList<>();
 }

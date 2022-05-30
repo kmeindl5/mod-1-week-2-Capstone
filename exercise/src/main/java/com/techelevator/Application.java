@@ -34,9 +34,16 @@ public class Application {
         createEmployees();
         List<Employee> employeeList = new ArrayList<>();
 
-        Employee employeeDean = new Employee();
+        Employee employee1 = new Employee();
+            employee1.setEmployeeId(1);
+            employee1.setFirstName("Dean");
+            employee1.setLastName("Johnson");
+            employee1.setEmail("djohnson@teams.com");
+            employee1.setHireDate("08/21/2020");
 
 
+        Employee employee2 = new Employee("Angie", "Smith", "08/21/2020");
+       Employee employee3 = new Employee("Margaret", "Thompson", "08/21/2020");
 
 
 
@@ -45,6 +52,10 @@ public class Application {
 
         // print all employees
         printEmployees();
+        System.out.println(employee1.setGetFullName()+ " (" + employee1.getStartingSalary + ") " );
+        System.out.println(employee2.setGetFullName() + " (" + employee2.raiseSalary(10) + ")");
+        System.out.println(employee3.setGetFullName() + " (" + employee3.getStartingSalary + ")");
+
 
         // create the TEams project
         createTeamsProject();

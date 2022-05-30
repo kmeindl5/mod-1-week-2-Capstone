@@ -5,7 +5,7 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String email;
-    private double salary;
+    private double salary = 60000.00;
     private Department department;
     private String hireDate;
 
@@ -74,4 +74,6 @@ public class Employee {
     public Double raiseSalary(double percent){
         return (STARTING_SALARY*percent)/100 + STARTING_SALARY;
     }
+
+    public Double getStartingSalary = STARTING_SALARY;
 }
