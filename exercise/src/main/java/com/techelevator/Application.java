@@ -40,7 +40,7 @@ public class Application {
             employee1.setLastName("Johnson");
             employee1.setEmail("djohnson@teams.com");
             employee1.setHireDate("08/21/2020");
-
+            String departmentId = departmentList.get(2);
 
         Employee employee2 = new Employee("Angie", "Smith", "08/21/2020");
        Employee employee3 = new Employee("Margaret", "Thompson", "08/21/2020");
@@ -52,9 +52,9 @@ public class Application {
 
         // print all employees
         printEmployees();
-        System.out.println(employee1.setGetFullName()+ " (" + employee1.getStartingSalary + ") " );
-        System.out.println(employee2.setGetFullName() + " (" + employee2.raiseSalary(10) + ")");
-        System.out.println(employee3.setGetFullName() + " (" + employee3.getStartingSalary + ")");
+        System.out.println(employee1.setGetFullName()+ " (" + employee1.getStartingSalary + ") " + departmentId );
+        System.out.println(employee2.setGetFullName() + " (" + employee2.raiseSalary(10) + ") " + departmentId);
+        System.out.println(employee3.setGetFullName() + " (" + employee3.getStartingSalary + ") " + departmentList.get(0));
 
 
         // create the TEams project
